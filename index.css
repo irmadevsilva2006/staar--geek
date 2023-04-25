@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 35vh 35vh 15vh;
+    grid-template-areas: 
+    "c"
+    "d"
+    "n"
+    "r";
+}
+
+header{
+    grid-area: c;
+    background-color: #942828;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+header> a {
+    font-size: 3rem;
+    color: wheat;
+    text-decoration: none;
+}
+
+.heroes{
+    grid-area: d;
+    background-image: url(imagens/Rectangle\ 2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.heroes> p{
+    font-size: 5rem;
+    padding-top: 100px;
+}
+
+main{
+    grid-area: n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+}
+
+main > a{
+    background-color: black;
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+.imagens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.imagens img{
+    max-width: 300px;
+}
+
+footer{
+    background-color: #DE8A27;
+}

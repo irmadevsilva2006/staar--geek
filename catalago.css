@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto auto;
+    grid-template-areas:
+        "h"
+        "m"
+        "f";
+}
+
+header {
+    grid-area: h;
+    background-image: url(imagens/Rectangle\ 15.jpg);
+}
+
+main {
+    grid-area: m;
+    background-color: brown;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+
+}
+main > a{
+    background-color:rgb(243, 241, 241);
+    padding: 10px 20px;
+
+}
+main > p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+    left: 3px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    column-gap: 10px;
+}
+.info>a{
+    color:white;
+}
+
+.card> a{
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+footer {
+    grid-area: f;
+}

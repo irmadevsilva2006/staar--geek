@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(imagens/fundosite.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "i"
+    ;
+   
+}  
+
+
+
+main {
+    grid-area: i;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;  
+    padding: 40px;
+ 
+   
+}
+
+
+main>h1{
+    font-size: 5rem;
+    top: 20px;
+    left: 40px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    row-gap: 15px;
+}
+
+form > input {
+    border-radius: 20px;
+    font-size: 2rem;
+    min-width: 370px;
+    min-height: 60px;
+}
+
+form > input:hover{
+    background-color: gray;
+}
+
+form > input[type="submit"]{
+    background-color:black;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+    min-width: 370px;
+}
+
+form > label{
+    font-size: 2rem;
+}
+
+@media(max-width:1000px){
+    body{
+        background-image: none;
+        background-color: brown;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    main {
+        grid-area: i;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        padding: 40px;
+    }
+
+    form{
+        width: 100%;
+    
+    }
+    
+}

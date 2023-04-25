@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "i"
+    "f"
+    ;
+}
+
+main {
+    grid-area: i;
+    background-color:white;
+    background-image: url(imagens/Rectangle\ 38.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+main > img{
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 15px;
+    margin: 20px auto;
+    
+}
+
+form > input{
+    border-radius: 3px;
+    height: 60px;
+}
+
+form > input:hover{
+    background-color:gray;
+}
+
+
+form > input[type="submit"]{
+    background-color:red;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: black;
+}
+
+form > label{
+    font-size: 2rem;
+}
+
+
+
+@media(max-width:1000px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vw;
+        grid-template-areas:
+        "i"
+        "f"
+        ;
+    }
+
+}
