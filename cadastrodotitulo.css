@@ -51,7 +51,7 @@ form > input:hover{
 }
 
 
-form > input[type="submit"]{
+form > input[type="button"]{
     background-color:red;
     font-size: 4rem;
     margin-top: 20px;
